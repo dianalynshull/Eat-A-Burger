@@ -16,7 +16,7 @@ const orm = {
             cb(res);
         })
     },
-    updateOne: (table, id, cb) {
+    updateOne: (table, id, cb) => {
         const query = 'UPDATE ' + table + ' SET devoured = 1 WHERE ' + id;
         connection.query(query, (err, res) => {
             if (err) throw err;
