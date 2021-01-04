@@ -10,3 +10,12 @@ Router.get('/', (req, res) => {
         res.render('index', hbsObject);
     });
 });
+
+Router.post('/api.burgers', (req, res) => [
+    burger.insert(
+        ['burger_name'],
+        [req.body.burger_name],
+        (res) => {
+            res.json();
+        })
+])
