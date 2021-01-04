@@ -10,5 +10,12 @@ const burger = {
         orm.insertOne('burgers', col, val, res => {
             cb(res);
         });
+    },
+    update: (id, cb) => {
+        orm.updateOne('burgers', id, res => {
+            cb(res);
+        });
     }
-}
+};
+
+module.exports = burger;
