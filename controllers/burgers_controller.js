@@ -11,11 +11,21 @@ Router.get('/', (req, res) => {
     });
 });
 
-Router.post('/api.burgers', (req, res) => [
+Router.post('/api/burgers', (req, res) => {
     burger.insert(
         ['burger_name'],
         [req.body.burger_name],
         (res) => {
-            res.json();
-        })
-])
+            res.status(200).end();
+        }
+    )
+});
+
+Router.put('/api/burgers/:id', (req, res) => {
+    const id = 'id=' + req.params.id;
+    burger.update(id, res => {
+        res.status(200).end();
+    })
+});
+
+module.exports = Router;
