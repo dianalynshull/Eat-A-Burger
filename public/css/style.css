@@ -1,9 +1,55 @@
   
 body {
     margin: 0px;
-    background-image: url(../img/pexels-vincent-rivaud-2233351.jpg);
+    background-image: url(../img/heroimg.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.burger-container {
+    height: 80vh;
+}
+
+.burgers {
+    color: #FFFFFF;
+    font-family: 'Mali', cursive;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #CEEEFF, 0 0 10px #CEEEFF;
+    text-align: center;
+    height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.btn-primary, .btn-primary:focus {
+    background-color: #004D7C;
+}
+
+.btn-primary:hover {
+    background-color: #003C61;
+}
+
+.fa-hamburger {
+    color: #FFCB00;
+    text-shadow: 0 0 5px #CEEEFF, 0 0 10px #CEEEFF;
+}
+
+.burgers::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    background-color: rgba(0, 135, 225, 0.8);
+    border: none;
+}
+
+.devoured {
+    opacity: 0.7;
+}
+
+.devoured-btn:hover {
+    background-color: #004D7C;
 }
