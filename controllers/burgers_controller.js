@@ -15,7 +15,7 @@ router.post('/api/burgers', (req, res) => {
     burger.insert(
         ['burger_name'],
         [req.body.burger_name],
-        (res) => {
+        () => {
             res.status(200).end();
         }
     )
@@ -23,7 +23,7 @@ router.post('/api/burgers', (req, res) => {
 
 router.put('/api/burgers/:id', (req, res) => {
     const id = 'id=' + req.params.id;
-    burger.update(id, res => {
+    burger.update(id, () => {
         res.status(200).end();
     })
 });

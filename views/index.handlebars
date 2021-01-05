@@ -5,7 +5,7 @@
         <div class="card py-2 my-3">
             <div class="card-body">
                 <p class="card-title pb-2">{{this.burger_name}}</p>
-                <button class="btn btn-primary" id="{{this.id}}"><i class="fas fa-hamburger"></i> DEVOUR <i
+                <button class="btn btn-primary monch-btn" data-id="{{this.id}}"><i class="fas fa-hamburger"></i> DEVOUR <i
                         class="fas fa-hamburger"></i></button>
             </div>
         </div>
@@ -14,14 +14,14 @@
     </div>
     <div class="col-3 burgers neon-text devoured overflow-auto">
         {{#each burgers}}
-        {{#unless devoured}}
+        {{#if devoured}}
         <div class="card py-2 my-3">
             <div class="card-body">
                 <p class="card-title">{{this.burger_name}}</p>
                 <button class="btn btn-primary devoured-btn" id="{{this.id}} disabled">Monched and Gone</button>
             </div>
         </div>
-        {{/unless}}
+        {{/if}}
         {{/each}}
     </div>
 </div>
