@@ -9,23 +9,27 @@ body {
 }
 
 .burger-container {
-    height: 80vh;
+    height: 70vh;
 }
 
 .burgers {
+    height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.neon-text {
     color: #FFFFFF;
     font-family: 'Mali', cursive;
     font-size: 1.25rem;
     letter-spacing: 2px;
     text-shadow: 0 0 5px #CEEEFF, 0 0 10px #CEEEFF;
     text-align: center;
-    height: 100%;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
 .btn-primary, .btn-primary:focus {
     background-color: #004D7C;
+    border: none;
 }
 
 .btn-primary:hover {
@@ -52,4 +56,14 @@ body {
 
 .devoured-btn:hover {
     background-color: #004D7C;
+}
+
+.create-burger {
+    font-size: 1.6rem;
+}
+
+.search, .search:focus {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
 }

@@ -1,5 +1,5 @@
 <div class="burger-container row d-flex justify-content-between m-5">
-    <div class="col-3 burgers overflow-auto">
+    <div class="col-3 burgers neon-text overflow-auto">
         {{#each burgers}}
         {{#unless devoured}}
         <div class="card py-2 my-3">
@@ -12,7 +12,7 @@
         {{/unless}}
         {{/each}}
     </div>
-    <div class="col-3 burgers devoured overflow-auto">
+    <div class="col-3 burgers neon-text devoured overflow-auto">
         {{#each burgers}}
         {{#unless devoured}}
         <div class="card py-2 my-3">
@@ -27,8 +27,9 @@
 </div>
 
 <div class="row d-flex justify-content-center">
+    <p class="neon-text create-burger">Don't see a burger you like? Make one!</p>
     <form class="col-5 d-flex align-items-end">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2 search" type="search" placeholder="" aria-label="Create">
+        <button class="btn btn-primary" type="submit">ASSEMBLE!</button>
     </form>
 </div>
