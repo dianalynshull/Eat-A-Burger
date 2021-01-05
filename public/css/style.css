@@ -1,0 +1,9 @@
+  
+body {
+    margin: 0px;
+    background-image: url(../img/pexels-vincent-rivaud-2233351.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
