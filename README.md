@@ -25,6 +25,7 @@
 ## Contributors
 * [Pexels - User Seyed Ali](https://www.pexels.com/photo/man-leaning-on-a-wall-with-signage-2331536/)
 * [Bootstrap](https://getbootstrap.com/)
+* [Font Awesome](https://fontawesome.com/)
 
 ## License
 * This project is [MIT](https://choosealicense.com/licenses/mit/) licensed
