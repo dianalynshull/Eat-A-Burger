@@ -62,7 +62,7 @@ body {
     font-size: 1.6rem;
 }
 
-.search, .search:focus {
+.create-input, .create-input:focus {
     color: white !important;
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
